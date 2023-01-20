@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+    /*$(document).mousemove(function() {
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        $('body').css('background-color', randomColor);
+      });*/
+      var intervalId = setInterval(changeColor, 3000);
+
+        function changeColor() {
+        var red = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+        var randomColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+        $('body').css('background-color', randomColor);
+        }
+      </script>
+</body>
+</html>
